@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="leading-tight">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/timer.css" />
+    <link rel="stylesheet" href="./assets/css/wordCounter.css" />
+    <link rel="stylesheet" href="./assets/css/flexbox.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"/>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <title>HCI @ UC Merced</title>
+  </head>
+
+  <body class="overflow-x-hidden font-sans font-light">
+    <section class="homescreen m-0 flex flex-col justify-around bg-gray-800 h-screen text-gray-100">
+      <nav class="flex justify-between">
+        <p class="text-xl py-8 px-8 uppercase md:px-48">
+          Human-Computer Interaction <span class="text-teal-400 font-bold">@ UC Merced</span>
+        </p>
+      </nav>
+
+      <h1 class=" text-3xl my-auto mx-auto font-light  md:mx-48 lg:text-6xl">Welcome!</h1>
+    </section>
+
+    <!-- Desk .svg with message -->
+    <section class="bg-gray-100">
+      <div class="flex justify-center px-8">
+        <object
+          type="image/svg+xml"
+          data="./assets/img/desk.svg"
+          class="-ml-1 hidden lg:flex"
+        >
+          Your browser does not support SVG
+        </object>
+        <h2 class="text-gray-800 flex-1 self-center text-center font-normal text-3xl pt-8 lg:pt-0 lg:text-5xl">
+          Thank you for participating! <br />
+          Let's go over some rules.
+        </h2>
+      </div>
+    </section>
+
+    <section class="bg-gray-100">
+      <div class="flex-container">
+        <!-- Word Counter -->
+        <div class=" flex-item wccontainer">
+          <h1>Word Counter</h1>
+          <textarea placeholder="Enter your text here..."></textarea>
+
+          <div class="output row">
+            <div>Characters: <span id="characterCount">0</span></div>
+            <div>Words: <span id="wordCount">0</span></div>
+          </div>
+        </div>
+
+        <!-- Timer -->
+        <div class="flex-item" id="app"></div>
+      </div>
+    </section>
+
+    <footer class="flex justify-center px-2 bg-gray-800 h-16 text-gray-100 text-sm items-center lg:px-48">
+      <div class="logos self-center">
+        <i class="fa fa-facebook px-2 fa-lg" aria-hidden="true"></i>
+        <i class="fa fa-twitter px-2 fa-lg" aria-hidden="true"></i>
+        <i class="fa fa-github px-2 fa-lg" aria-hidden="true"></i>
+      </div>
+    </footer>
+
+    <script src="./assets/js/star.js"></script>
+    <script src="./assets/js/timer.js"></script>
+    <script src="assets/js/wordcounter.js"></script>
+
+    <script>
+      //refresh page on browser resize
+      $(window).bind('resize', function(e) {
+        if (window.RT) clearTimeout(window.RT);
+        window.RT = setTimeout(function() {
+          this.location.reload(false); /* false to get page from cache */
+        }, 200);
+      });
+    </script>
+
+  </body>
+</html>
