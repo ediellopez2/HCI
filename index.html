@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" class="leading-tight">
   <head>
+    <!-- meta is a data about data.
+          used to specify character set, page description, keywords, author of doc, and viewport settings-->
     <meta charset="UTF-8" />
+    <!--name and content are attributes followed by its value
+        for this example: setting the viewport to make website look good for all devices  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- The <link> tag defines the relationship between the current document and an external resource.
+              Most often used to link to external style sheets. -->
+
+        <!-- The rel attribute specifies the relationship between the current document and the linked document.
+                              Only used if the href attribute is present. -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/timer.css" />
     <link rel="stylesheet" href="./assets/css/wordCounter.css" />
     <link rel="stylesheet" href="./assets/css/flexbox.css" />
+    <!-- INTEGRITY: attribute allows the browser to check the file 
+      source to ensure that the code is never loaded if the source has
+      been manpulated  
+    CROSSORIGIN: attribute is present when a request is loaded-->
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"/>
-
+      <!-- script is an element for the attribute src 
+        script points to an external JS file-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
     <title>HCI @ UC Merced</title>
   </head>
-
+<!-- from here on, it is just how the page is formatted and setup -->
   <body class="overflow-x-hidden font-sans font-light">
     <section class="homescreen m-0 flex flex-col justify-around bg-gray-800 h-screen text-gray-100">
       <nav class="flex justify-between">
