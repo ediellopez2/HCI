@@ -186,6 +186,12 @@ svg {
   display: flex;
 }
 
+/* same as above, but this is the correct term for what 
+its being used for */
+/* .flex-containter {
+  display: flex;
+} */
+
 .hidden {
   display: none;
 }
@@ -299,6 +305,14 @@ svg {
   margin-left: auto;
   margin-right: auto;
 }
+.test{
+  /* float: right; */
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+
+
 
 .mt-8 {
   margin-top: 2rem;
@@ -562,6 +576,12 @@ svg {
   }
 }
 
+/* @media rule is used in media queries to apply
+different styles for different media types/devices
+Can also be used to check on things like:  */
+    /* in this case, we set the min
+    screen size requirement inorder to display certain
+    elements */
 @media (min-width: 768px) {
   .md\:inline {
     display: inline;
