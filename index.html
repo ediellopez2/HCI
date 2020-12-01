@@ -61,24 +61,6 @@
       </div>
     </section>
 
-    <!-- clock and word counter here: -->
-    <section class="bg-gray-100">
-      <div class="flex-container">
-        <!-- Word Counter -->
-        <div class=" flex-item wccontainer">
-          <h1>Word Counter</h1>
-          <textarea placeholder="Enter your text here..."></textarea>
-
-          <div class="output row">
-            <div>Characters: <span id="characterCount">0</span></div>
-            <div>Words: <span id="wordCount">0</span></div>
-          </div>
-        </div>
-
-        <!-- Timer -->
-        <div class="flex-item" id="app"></div>
-      </div>
-    </section>
 
     <!-- testing section -->
     <!-- <section class = "bg-gray-800">
@@ -97,21 +79,74 @@
     </section> -->
 
     <!-- TAKE 2 BECAUSE IDK WTF: -->
-    <section class = "bg-gray-800 bg">
-      <div class = "py-24">
-        <h2 class = "flex-item text-teal-400 text-3xl text-center justify-around">
+    <!-- <section class = "bg-gray-800 bg">
+      <div class = "py-8">
+        <h2 class = "flex-item text-teal-400 text-3xl text-center justify-around pb-8">
           Here we will conduct your testing using
           a programming language:
         </h2>
 
-        <img src = "assets/img/programmer.svg" alt = "programmer at desk"
-          class = "test flex"
-          
-          width = "45%">
+        <div class = "flexTest">
 
-        <img src = "assets/img/HelloTest.PNG" alt = "CPP HelloWorld test"
-          class = "flex test">
+          <img src = "assets/img/HelloTest.PNG" alt = "CPP HelloWorld test"
+          class = "pl-2"
+          height="20%"> 
+
+          word counter 
+          <div class=" flex-item wccontainer">
+            <h1>Word Counter</h1>
+            <textarea placeholder="Enter your text here..."></textarea>
+  
+            <div class="output row">
+              <div>Characters: <span id="characterCount">0</span></div>
+              <div>Words: <span id="wordCount">0</span></div>
+            </div>
+          </div>
+        </div>
+         <img src = "assets/img/programmer.svg" alt = "programmer at desk"
+        class = "flex-col test"
+        width = "45%"> 
+        
       </div>
+    </section> -->
+
+    <!-- VERSION 3: -->
+    <section class = "bg-gray-800 bg">
+      <div class = "display-col">
+        <h2 class = "flex-item text-teal-400 text-3xl text-center justify-around pb-8">
+          Here we will conduct your testing using
+          a programming language:
+        </h2>
+
+        <div class = "flexTest">
+          <div class = "display-col flex-item">
+
+            <img src = "assets/img/HelloTest.PNG" alt = "CPP HelloWorld test"
+            class = "pl-2"
+            height="50%">  
+
+              <!-- Timer -->
+            <div class="pl-8 pb-8" id="app"></div>
+
+          </div>
+          <!-- word counter -->
+          <div class=" flex-item wccontainer">
+            <h1>Word Counter</h1>
+            <textarea placeholder="Enter your text here..."></textarea>
+  
+            <div class="output row">
+              <div>Characters: <span id="characterCount">0</span></div>
+              <div>Words: <span id="wordCount">0</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <img src = "assets/img/programmer.svg" alt = "programmer at desk"
+      class = "flex-col test"
+      
+      width = "45%">-->
+        
     </section>
 
 

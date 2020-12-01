@@ -192,12 +192,37 @@ its being used for */
   display: flex;
 } */
 
+
+.flexTest {
+  display: flex;
+  flex-flow: row;
+
+  justify-content: center;
+
+  /* padding-top: 3rem;
+  padding-bottom: 6rem; */
+
+/* 
+  padding: 15px;
+  margin: 10%; */
+}
+
+.display-col {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
 .hidden {
   display: none;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-wrap {
@@ -313,7 +338,6 @@ its being used for */
 
 
 
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -371,6 +395,14 @@ its being used for */
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 1rem;
+}
+
+.pl-8 {
+  padding-left: 8rem;
 }
 
 .py-8 {
@@ -509,6 +541,10 @@ its being used for */
 
 .w-24 {
   width: 6rem;
+}
+
+.w-30 {
+  width: 30rem;
 }
 
 .w-1\/2 {
