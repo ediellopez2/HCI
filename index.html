@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/timer.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/timer.css" /> -->
+    <link rel="stylesheet" href="./assets/css/new_timer.css" />
     <link rel="stylesheet" href="./assets/css/wordCounter.css" />
     <link rel="stylesheet" href="./assets/css/flexbox.css" />
     <link
@@ -50,8 +51,13 @@
     <section class="bg-gray-100">
       <div class="flex-container">
         <!-- Word Counter -->
-        <div class=" flex-item wccontainer">
+        <div class="flex-item wccontainer">
           <h1>Word Counter</h1>
+              
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum harum itaque ea aspernatur fugit! Officiis hic, corrupti maxime reprehenderit inventore quam cupiditate at vero! Architecto amet voluptate, officiis magnam illo temporibus exercitationem similique sunt libero hic velit dolores, asperiores iste natus, iusto modi nam rem suscipit? Veniam eveniet sequi voluptatem. Incidunt corrupti magni dicta, sint ab mollitia dolor, eum deserunt unde ratione nemo at consectetur laudantium. Numquam hic unde voluptatem, neque error ab quia suscipit repudiandae quas reprehenderit culpa sint vero, blanditiis quis cum nobis natus voluptate similique! Dolorem fugiat magnam vitae id quibusdam amet, eaque autem eius! Cumque, delectus.</p>
+
+          <progress id="progressBar" max="0" value="0" class="progress_styled"></progress>
+
           <textarea placeholder="Enter your text here..."></textarea>
 
           <div class="output row">
@@ -60,8 +66,27 @@
           </div>
         </div>
 
+        <!-- make a timer-->
+        <div class="flex-item outerTimerContainer">
+          <div class="innerTimerContainer">
+              <form id="numbersForm">
+                  <input id="minutesInput" type="number" min="0"  placeholder="Minutes">
+                  <span id="colonStyle" class="colon">:</span>
+                  <input id="secondsInput" type="number" min="0" max="60" maxlength="2" step="5" placeholder="Seconds" value="">
+              </form>
+              
+              <form>
+                  <input id="startButton" type="button" placeholder="Start" value="Start">
+                  <span class="colon">&nbsp;</span>
+                  <input id="resetButton" type="button" placeholder="reset" value="Reset">
+              </form>
+          </div>
+         
+        </div>
+
         <!-- Timer -->
-        <div class="flex-item" id="app"></div>
+        <!-- <div class="flex-item" id="app"></div> -->
+
       </div>
     </section>
 
@@ -74,8 +99,9 @@
     </footer>
 
     <script src="./assets/js/star.js"></script>
-    <script src="./assets/js/timer.js"></script>
-    <script src="assets/js/wordcounter.js"></script>
+    <script src="./assets/js/new_timer.js"></script>
+    <!-- <script src="./assets/js/timer.js"></script> -->
+    <script src="./assets/js/wordcounter.js"></script>
 
     <script>
       //refresh page on browser resize

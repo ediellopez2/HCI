@@ -1,0 +1,91 @@
+  .outerTimerContainer {
+      width: 420px;
+      /* height: 170px; */
+      background: #2d3748;
+      border-radius: 8px;
+      margin: auto 30px;
+      padding: 15px;
+  }
+  .innerTimerContainer {
+      width: 96%;
+      margin: 0 auto;
+  }
+  input[type="number"], #colonStyle {
+      -webkit-transition: background 1s, color 1s, font-size 1s;	
+      transition: background 1s, color 1s, font-size 1s;
+  }
+  input {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+    /* gives equal widths to flex-cards */
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex: 1;
+    /* makes all flex-cards have the same height */
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+  }
+  form {
+        display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  .colon {
+      font-size: 4rem;
+      color: white;
+      font-family: monospace;
+      -webkit-transition: text-shadow 1s, font-size 1s, color 1s, background 1s;
+      transition: text-shadow 1s, font-size 1s, color 1s, background 1s;
+  }
+  progress {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+  }
+  .progress_styled {
+      width: 100%;
+      line-height: 2;
+      height: 2rem;
+  }
+  progress::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 10px;
+  background-color: clear;
+  border: solid  #d9d9d9;
+  /* box-shadow: inset 10px 10px 21px rgba(240,240,240,0.1); */
+  }
+  
+  progress::-webkit-progress-value {
+  background:#00375D;
+  border-radius: 10px;
+  transition: width 1s linear;
+  }
+  
+  /* timer experiment */
+  #startButton, #resetButton {
+    background: white;
+    /* color: #2d3748; */
+    transition: text-shadow 0.4s, box-shadow 0.5s, background 0.3s, color 0.2s;
+    border: none;
+  }
+  @media screen and (max-width: 34em) { 
+      .form_active {
+          font-size: 4.5rem;		
+      }
+  }
