@@ -127,6 +127,24 @@
       </div>
     </section>
 
+    <section class="flex-col text-center justify-center items-center bg-gray-800 text-gray-100 py-24">
+      <p class="text-3xl lg:text-5xl"><span class="text-6xl"></span>There's one final step.</p>
+    </section>
+
+    <section id="contact" class="bg-gray-100 py-24">
+      <div class="flex justify-evenly">
+        <object type="image/svg+xml" data="./assets/img/contact.svg" class="w-1/2 hidden lg:flex">
+          Your browser does not support SVG
+        </object>
+
+        <div class="flex flex-col items-center flex-1 my-auto">
+          <h1 class="text-5xl text-center">Fill out the Google Form.</h1>
+        
+          <button class="py-2 px-2 my-4 rounded shadow text-gray-100 text-2xl border-teal-400 border-2 w-36 h-12 bg-teal-400 hover:shadow-lg" onclick="openLink()">Google Form</button>
+        </div>
+      </div>
+    </section>
+
     <footer class="flex justify-center px-2 bg-gray-800 h-16 text-gray-100 text-sm items-center lg:px-48">
       <div class="logos self-center">
         <i class="fa fa-facebook px-2 fa-lg" aria-hidden="true"></i>
@@ -140,6 +158,11 @@
     <script src="./assets/js/wordcounter.js"></script>
 
     <script>
+      function openLink() {
+        window.open("https://github.com/ediellopez2/HCI");
+      }
+
+
       //refresh page on browser resize
       $(window).bind('resize', function(e) {
         if (window.RT) clearTimeout(window.RT);
