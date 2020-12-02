@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/timer.css" /> -->
     <link rel="stylesheet" href="./assets/css/new_timer.css" />
     <link rel="stylesheet" href="./assets/css/wordCounter.css" />
     <link rel="stylesheet" href="./assets/css/flexbox.css" />
@@ -88,11 +87,14 @@
 
     <section class="bg-gray-100">
       <div class="flex-container">
+
         <!-- Word Counter -->
         <div class="flex-item wccontainer">
           <h1>Word Counter</h1>
               
           <p>Do you have a favorite place to go—a place with family, good weather, and fun things to do like crabbing? I’m glad I do. New Jersey is my favorite place for many reasons. The first reason is my family. Over half of my family lives in New Jersey. The second reason for New Jersey being my favorite place is the weather. Instead of being hot and sweaty, it’s always cool and moist. The third reason for New Jersey being my favorite place is crabbing. For all these reasons, New Jersey is my favorite place to go.</p>
+          
+          <!-- Progress Bar -->
           <progress id="progressBar" max="0" value="0" class="progress_styled"></progress>
 
           <textarea placeholder="Enter your text here..."></textarea>
@@ -103,7 +105,7 @@
           </div>
         </div>
 
-        <!-- make a timer-->
+        <!-- Timer -->
         <div class="flex-item outerTimerContainer">
           <div class="innerTimerContainer">
               <form id="numbersForm">
@@ -121,9 +123,6 @@
          
         </div>
 
-        <!-- Timer -->
-        <!-- <div class="flex-item" id="app"></div> -->
-
       </div>
     </section>
 
@@ -137,7 +136,6 @@
 
     <script src="./assets/js/star.js"></script>
     <script src="./assets/js/new_timer.js"></script>
-    <!-- <script src="./assets/js/timer.js"></script> -->
     <script src="./assets/js/wordcounter.js"></script>
 
     <script>
