@@ -421,6 +421,10 @@ svg {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-gray-100 {
   color: #f7fafc;
 }
